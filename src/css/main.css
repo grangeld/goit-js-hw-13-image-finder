@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ebf0ec;
+}
+
+a {
+  text-decoration: none;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+li {
+  list-style-type: none; /* Убираем маркеры */
+  margin-bottom: 20px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.search-form {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+input {
+  width: 50%;
+  padding: 10px;
+  font-size: 32px;
+  border-radius: 10px;
+  outline-color: #363838;
+}
+
+.stats {
+  border-radius: 5px;
+  background-color: rgba(32, 36, 90, 0.7);
+
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  bottom: 5px;
+}
+
+.stats-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.stats-item {
+  padding: 5px;
+  color: #e8e8e8;
+}
+
+.photo-card {
+  width: 600px;
+  position: relative;
+}
+
+.btn {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64, 199, 129);
+  box-shadow: 0 -3px rgb(53, 167, 110) inset;
+  transition: 0.2s;
+  margin-bottom: 50px;
+  margin-left: 50%;
+}
+.btn:hover {
+  background: rgb(53, 167, 110);
+}
+.btn:active {
+  background: rgb(33, 147, 90);
+  box-shadow: 0 3px rgb(33, 147, 90) inset;
+}
