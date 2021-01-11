@@ -6,7 +6,6 @@ async function getNewImg(search) {
   const response = await fetch(URL + `&q=${search}&key=${APIKEY}&page=${PAGE}`);
   const img = response.json();
   PAGE++;
-  console.log(PAGE);
   return img;
 }
 
